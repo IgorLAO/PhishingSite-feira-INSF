@@ -21,7 +21,7 @@ function App() {
       subject: EMAIL,
       text: PWD
     }
-    let resposnse = await axios.post('http://localhost:5001/enviarSenha', dadosPessoa)
+    let resposnse = await axios.post('http://localhost:5000/enviarSenha', dadosPessoa)
     console.log(resposnse)
   }
 

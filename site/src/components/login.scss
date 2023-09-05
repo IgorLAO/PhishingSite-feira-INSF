@@ -1,0 +1,27 @@
+.popMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000b7;
+    width: 400px;
+    position: fixed;
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    .popUp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: aliceblue;
+        width: 300px;
+        height: 350px;
+        b{
+            padding: 15px;
+        }
+        .Inputs{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
