@@ -5,6 +5,13 @@ import { useState, useRef } from 'react';
 export default function PopUp() {
     const [hidden, setHidden] = useState();
 
+    const IsHide = () =>{
+        setHidden(true)
+
+        if(hidden)
+                setHidden(false)
+    }
+
     return (
         <>
         {hidden && (

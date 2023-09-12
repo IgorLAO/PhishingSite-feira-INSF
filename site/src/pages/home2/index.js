@@ -35,16 +35,19 @@ export default function Post_HomePage() {
                         <img src='https://scontent-gru1-1.cdninstagram.com/v/t39.30808-6/373586236_858615375631174_2057286468934693759_n.jpg?stp=dst-jpg_e35_p1080x1080_sh0.08&_nc_ht=scontent-gru1-1.cdninstagram.com&_nc_cat=1&_nc_ohc=AtL48DrCQIgAX_B1kY1&edm=AP_V10EAAAAA&ccb=7-5&oh=00_AfDct9vyPERzOwothyCfk-uXBFaPM7B_wn8wBpl0BRJfTw&oe=64FB23B8&_nc_sid=2999b8' />
                     </div>
                     <div className='DetailsPost'>
-                        <div className='header'>
-                            <img src='https://s2-g1.glbimg.com/yGzD9QZnq9Jod8lELbkvvfnhpS0=/0x0:977x555/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/L/8/uEij4NQfeVEF5aJYvyyg/bill-bill.png' className='imgperfil' />
 
+                        <div className='header'>
+                            <span style={{display: "flex", alignItems: "center"}}>
+                            <img src='https://s2-g1.glbimg.com/yGzD9QZnq9Jod8lELbkvvfnhpS0=/0x0:977x555/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/L/8/uEij4NQfeVEF5aJYvyyg/bill-bill.png' className='imgperfil' />
                             <a className='PerfilLink' href='https://Perfil.com'>
+
                                 <b>Carlinhos</b>
                                 <svg aria-label="Verificado" class="x1lliihq x1n2onr6" color="rgb(0, 149, 246)" fill="rgb(0, 149, 246)" height="12" role="img" viewBox="0 0 40 40" width="12"><title>Verificado</title><path d="M19.998 3.094 14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v5.905h5.975L14.638 40l5.36-3.094L25.358 40l3.232-5.6h6.162v-6.01L40 25.359 36.905 20 40 14.641l-5.248-3.03v-6.46h-6.419L25.358 0l-5.36 3.094Zm7.415 11.225 2.254 2.287-11.43 11.5-6.835-6.93 2.244-2.258 4.587 4.581 9.18-9.18Z" fill-rule="evenodd"></path></svg>
-                            </a>
-                            <span>•</span>
+                            <span style={{marginLeft: 5}}>•</span>
                             <a href='aa' onClick={() => setHidden(true)}> Seguir </a>
-                            <i class="fa-solid fa-ellipsis"></i>
+                            </a>
+                            </span>
+                            <i style={{fontSize: 25}} class="fa-solid fa-ellipsis"></i>
                         </div>
 
                         <div className='Comments'>
@@ -115,6 +118,7 @@ export default function Post_HomePage() {
                                 <svg aria-label="Salvar" class="x1lliihq x1n2onr6" color="rgb(0, 0, 0)" fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24"><title>Salvar</title><polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon></svg>
                             </span>
                             <b> 338.494 curtidas </b>
+                                <a style={{color: "#" + "8F8F8F"}}> Há 18 anos </a>
                         </div>
                     </div>
                 </div>
