@@ -42,6 +42,7 @@ export default function PopUp() {
                     <input type='text'/>
                     <input type='text'/>
                     </div>
+                    
                     </div>
                     
                     </div>
