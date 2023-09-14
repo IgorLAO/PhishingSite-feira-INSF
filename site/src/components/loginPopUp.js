@@ -14,7 +14,6 @@ export default function PopUp() {
 
     return (
         <>
-        {hidden && (
             <div className='popMain'>
             <div className='popUp'>
                 <b onClick={() => setHidden(false)}> X </b>
@@ -27,7 +26,6 @@ export default function PopUp() {
                     </div>
                     
                     </div>
-                    )}
         </>
     );
 };
