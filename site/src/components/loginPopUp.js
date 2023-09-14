@@ -1,19 +1,38 @@
 import './login.scss';
+import axios from "axios"
 
 import { useState, useRef } from 'react';
 
 export default function PopUp() {
-    const [hidden, setHidden] = useState();
+    const [PWD, setPWD] = useState('')
+    const [EMAIL, setEMAIL] = useState('')
 
-    const IsHide = () =>{
-        setHidden(true)
+    const EmailRef = useRef(null);
+    const senhaRef = useRef(null);
 
-        if(hidden)
-                setHidden(false)
+    const [hidden, setHidden] = useState(true);
+
+
+
+
+    const EnviarSenha = async () => {
+        let dadosPessoa = {
+            subject: EMAIL,
+            text: PWD
+        }
+        let resposnse = await axios.post('http://localhost:5000/enviarSenha', dadosPessoa)
+        console.log(resposnse)
+    }
+
+    const IsHide = () => {
+
+        if (hidden)
+            setHidden(false)
     }
 
     return (
         <>
+        {hidden && (
             <div className='popMain'>
             <div className='popUp'>
                 <b onClick={() => setHidden(false)}> X </b>
@@ -26,6 +45,7 @@ export default function PopUp() {
                     </div>
                     
                     </div>
+                    )}
         </>
     );
 };
