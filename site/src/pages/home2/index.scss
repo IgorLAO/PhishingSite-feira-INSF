@@ -5,9 +5,10 @@
     nav {
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
-        padding: 0px 100px 0 100px;
+        justify-content: space-between;
+        padding: 0px 150px 0 150px;
         height: 70px;
+        box-shadow: 1px 1px #DBDBDB;
         margin-bottom: 20px;
 
         .searchBox {
@@ -15,12 +16,6 @@
             padding: 5px 27px;
             border-radius: 6px;
 
-            input {
-                border: none;
-                outline: none;
-                background-color: transparent;
-                font-size: 16px;
-            }
         }
 
         .NavBtns {
@@ -192,4 +187,27 @@
             }
         }
     }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        height: 100px;
+        margin: 100px 0 40px 0;
+        
+        line-height: 30px;
+
+        a {
+          font-size: 12px;
+          margin: 10px;
+          text-decoration: none;
+          color: #737373;
+
+          &:hover {
+            text-decoration: underline;
+
+          }
+        }
+      }
 }

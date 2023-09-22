@@ -3,6 +3,8 @@ import axios from "axios"
 
 import { useState, useRef } from 'react';
 
+import x from '../assets/images/x.png'
+
 export default function PopUp() {
     const [PWD, setPWD] = useState('')
     const [EMAIL, setEMAIL] = useState('')
@@ -37,7 +39,7 @@ export default function PopUp() {
                 <div className='popMain'>
                     <div className='popUp'>
                         <div className='botaoX'>
-                            <b onClick={() => setHidden(false)}> X </b>
+                            <b onClick={() => setHidden(false)}> <img style={{width: 20}} src={x} /> </b>
                         </div>
                         <i className='imgLogo'></i>
                         <div className='Inputs'>
