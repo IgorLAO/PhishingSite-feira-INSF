@@ -1,3 +1,5 @@
+
+
 .mainPost {
     display: flex;
     flex-direction: column;
@@ -40,18 +42,52 @@
         justify-content: center;
 
         .Post {
-            display: flex;
 
             .imagePost {
-                height: 90%;
+                height: 91.5%;
                 width: 470px;
 
                 img {
                     border: none;
                     align-items: first baseline;
-                    height: 109.7%;
+                    height: 108%;
                     width: 470px;
                 }
+                .headerResponsivo {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    text-align: left;
+                    border-bottom: #DBDBDB solid 1px;
+                    border-top: #DBDBDB solid 1px;
+                    border-right: #DBDBDB solid 1px;
+                    border-left: #DBDBDB solid 1px;
+                    padding: 10px 15px;
+                    display: none;
+
+                    .imgperfil {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 100%;
+                        margin-right: 15px;
+                    }
+
+                    .PerfilLink {
+                        display: flex;
+                        align-items: center;
+                        font-size: 14px;
+
+                        b {
+                            margin-right: 5px;
+                            color: #000;
+                        }
+
+                        img {
+                            width: 20px;
+                        }
+                    }
+                }
+                
             }
 
             display: flex;
@@ -59,8 +95,7 @@
             .DetailsPost {
                 display: flex;
                 flex-direction: column;
-                width: 350px;
-
+                min-width: 352px;
                 .header {
                     padding: 10px 15px;
                     display: flex;
@@ -200,7 +235,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 90%;
+
         height: 100px;
         margin: 100px 0 40px 0;
 
@@ -217,5 +252,44 @@
 
             }
         }
+        .links{
+            width: 90%;
+            text-align: center;
+        }
+    }
+      @media (max-width: 600px) {
+        nav{
+            padding: 5px 20px;
+            width: 100%;
+        }
+        .Post{
+            flex-direction: column;
+            justify-content: center;
+        }
+        .Comments{
+            display: none;
+        }
+        .DetailsPost{
+            width: 100%;
+        }
+        .BtnsReactions {
+            width: 94.5%;
+            padding: 5px;
+            margin-top: 112px;
+            border-left: #DBDBDB solid 1px;
+            border-top: none;
+        }
+        .header{
+            display: none !important;
+        }
+        .headerResponsivo{
+            display: flex !important;
+        }
     }
 }
+
+
+
+
+
+
