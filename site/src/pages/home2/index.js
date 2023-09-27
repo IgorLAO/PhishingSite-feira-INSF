@@ -2,11 +2,15 @@ import './index.scss';
 
 import Logo from '../../assets/images/instagram-logo.webp';
 import PostImage from '../../assets/images/publiIMG.png';
-import VerifiedIcon from '../../assets/images/verified.png';
+import perfil from '../../assets/images/presente.jpg';
 import PopUp from '../../components/loginPopUp';
 
 import jairLula from '../../assets/images/luizBolsonaro.jfif';
-import gaules from '../../assets/images/gaules.jpg';
+import flavio from '../../assets/images/favio.jfif';
+import stanley from '../../assets/images/stanley.jfif';
+import carl from '../../assets/images/karl young.jfif';
+import papa from '../../assets/images/papa.jfif';
+import ramon from '../../assets/images/ramon.jfif';
 import frifa from '../../assets/images/frifa.jfif';
 import carlinhos from '../../assets/images/carlinhos.jfif';
 import lula from '../../assets/images/lula.jfif';
@@ -42,13 +46,27 @@ export default function Post_HomePage() {
             <section className='PostSection'>
                 <div className='Post'>
                     <div className='imagePost'>
+
+                        <div className='headerResponsivo'>
+                            <span style={{ display: "flex", alignItems: "center" }}>
+                                <img src={perfil} className='imgperfil' />
+                                <a className='PerfilLink' >
+
+                                    <b onClick={Hide}> Dalva's Giveaway </b>
+                                    <svg aria-label="Verificado" class="x1lliihq x1n2onr6" color="rgb(0, 149, 246)" fill="rgb(0, 149, 246)" height="12" role="img" viewBox="0 0 40 40" width="12"><title>Verificado</title><path d="M19.998 3.094 14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v5.905h5.975L14.638 40l5.36-3.094L25.358 40l3.232-5.6h6.162v-6.01L40 25.359 36.905 20 40 14.641l-5.248-3.03v-6.46h-6.419L25.358 0l-5.36 3.094Zm7.415 11.225 2.254 2.287-11.43 11.5-6.835-6.93 2.244-2.258 4.587 4.581 9.18-9.18Z" fill-rule="evenodd"></path></svg>
+                                    <span style={{ marginLeft: 5 }}>•</span>
+                                    <a onClick={Hide}> Seguir </a>
+                                </a>
+                            </span>
+                            <i style={{ fontSize: 20 }} class="fa-solid fa-ellipsis"></i>
+                        </div>
                         <img src={PostImage} />
                     </div>
                     <div className='DetailsPost'>
 
                         <div className='header'>
                             <span style={{ display: "flex", alignItems: "center" }}>
-                                <img src='https://s2-g1.glbimg.com/yGzD9QZnq9Jod8lELbkvvfnhpS0=/0x0:977x555/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/L/8/uEij4NQfeVEF5aJYvyyg/bill-bill.png' className='imgperfil' />
+                            <img src={perfil} className='imgperfil' />
                                 <a className='PerfilLink' >
 
                                     <b onClick={Hide}> Dalva's Giveaway </b>
@@ -62,7 +80,7 @@ export default function Post_HomePage() {
 
                         <div className='Comments'>
                             <div className='comment'>
-                                <img src='https://s2-g1.glbimg.com/yGzD9QZnq9Jod8lELbkvvfnhpS0=/0x0:977x555/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/L/8/uEij4NQfeVEF5aJYvyyg/bill-bill.png' className='aaa' />
+                            <img src={perfil} className='imgperfil' />
 
                                 <div className='textComment'>
                                     <a > <b onClick={Hide}> Dalva's Giveaway <svg aria-label="Verificado" class="x1lliihq x1n2onr6" color="rgb(0, 149, 246)" fill="rgb(0, 149, 246)" height="12" role="img" viewBox="0 0 40 40" width="12"><title>Verificado</title><path d="M19.998 3.094 14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v5.905h5.975L14.638 40l5.36-3.094L25.358 40l3.232-5.6h6.162v-6.01L40 25.359 36.905 20 40 14.641l-5.248-3.03v-6.46h-6.419L25.358 0l-5.36 3.094Zm7.415 11.225 2.254 2.287-11.43 11.5-6.835-6.93 2.244-2.258 4.587 4.581 9.18-9.18Z" fill-rule="evenodd"></path></svg> </b>
@@ -109,6 +127,62 @@ export default function Post_HomePage() {
                                 <div className='textComment'>
                                     <a>
                                         <b> Jair da silva ferreira </b> Eu ganhei eu ganheiii. Ganhar agora.
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div className='comment'>
+                                <img src={ramon} className='aaa' />
+
+                                <div className='textComment'>
+                                    <a>
+                                        <b> Jair da silva ferreira </b> Eu ganhei eu ganheiii. Ganhar agora.
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div className='comment'>
+                                <img src={flavio} className='aaa' />
+
+                                <div className='textComment'>
+                                    <a>
+                                        <b> Jair da silva ferreira </b> Eu ganhei eu ganheiii. Ganhar agora.
+                                    </a>
+                                </div>
+                            </div>
+                            <div className='comment'>
+                                <img src={carl} className='aaa' />
+
+                                <div className='textComment'>
+                                    <a>
+                                        <b> Jair da silva ferreira </b> Eu ganhei eu ganheiii. Ganhar agora.
+                                    </a>
+                                </div>
+                            </div>
+                            <div className='comment'>
+                                <img src={stanley} className='aaa' />
+
+                                <div className='textComment'>
+                                    <a>
+                                        <b> Jair da silva ferreira </b> Eu ganhei eu ganheiii. Ganhar agora.
+                                    </a>
+                                </div>
+                            </div>
+                            <div className='comment'>
+                                <img src={ramon} className='aaa' />
+
+                                <div className='textComment'>
+                                    <a>
+                                        <b> Jair da silva ferreira </b> Quero ganhar. Forte forte pra da sorte :{')'}.
+                                    </a>
+                                </div>
+                            </div>
+                            <div className='comment'>
+                                <img src={papa} className='aaa' />
+
+                                <div className='textComment'>
+                                    <a>
+                                        <b> Papa Pio XII  </b> Com fé em Deus eu irei ganhar!!
                                     </a>
                                 </div>
                             </div>
