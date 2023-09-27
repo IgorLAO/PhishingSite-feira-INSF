@@ -51,6 +51,40 @@
                     height: 108%;
                     width: 470px;
                 }
+                .headerResponsivo {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    text-align: left;
+                    border-bottom: #DBDBDB solid 1px;
+                    border-top: #DBDBDB solid 1px;
+                    border-right: #DBDBDB solid 1px;
+                    border-left: #DBDBDB solid 1px;
+                    padding: 10px 15px;
+
+                    .imgperfil {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 100%;
+                        margin-right: 15px;
+                    }
+
+                    .PerfilLink {
+                        display: flex;
+                        align-items: center;
+                        font-size: 14px;
+
+                        b {
+                            margin-right: 5px;
+                            color: #000;
+                        }
+
+                        img {
+                            width: 20px;
+                        }
+                    }
+                }
+                
             }
 
             display: flex;
@@ -58,8 +92,7 @@
             .DetailsPost {
                 display: flex;
                 flex-direction: column;
-                width: 350px;
-
+                min-width: 352px;
                 .header {
                     padding: 10px 15px;
                     display: flex;
@@ -141,8 +174,7 @@
                     border-top: #DBDBDB solid 1px;
                     border-right: #DBDBDB solid 1px;
                     border-bottom: #DBDBDB solid 1px;
-                    padding: 15px;
-
+                    padding: 10px;
                     .reactions {
                         display: flex;
                         justify-content: space-between;
@@ -210,4 +242,27 @@
           }
         }
       }
+      @media (max-width: 600px) {
+        .Post{
+            flex-direction: column;
+        }
+        .Comments{
+            display: none;
+        }
+        .DetailsPost{
+            width: 100%;
+            border: #1877F2 solid;
+        }
+        .BtnsReactions {
+            width: 95%;
+            padding: 5px;
+        }
+        .header{
+            display: none;
+        }
+        .headerResponsivo{
+            display: block;
+        }
+    }
+      
 }
