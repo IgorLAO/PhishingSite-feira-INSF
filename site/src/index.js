@@ -10,8 +10,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<App />} />
-        <Route path='/Post' element={<Post_HomePage />}/>
+        <Route path='/' element={<Post_HomePage />}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
