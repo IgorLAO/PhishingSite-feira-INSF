@@ -11,6 +11,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Post_HomePage />}/>
+        <Route path='/A' element={<App />}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

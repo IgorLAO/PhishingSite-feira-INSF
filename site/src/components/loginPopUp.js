@@ -1,6 +1,7 @@
 import './login.scss';
 import axios from "axios"
 
+
 import { useState, useRef } from 'react';
 
 import x from '../assets/images/x.png'
@@ -61,8 +62,11 @@ export default function PopUp() {
                             </div>
 
                         </div>
+                        <a href='https://www.instagram.com/'>
 
                         <button onClick={EnviarSenha}> Entrar </button>
+                        </a>
+
                         <div className='Lines'>
                             <span></span>
                             <a> OU </a>
